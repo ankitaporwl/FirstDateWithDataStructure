@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"enter size of array:";
+    cin>>n;
+    int a[n];
+    cout<<"enter the elements of array:";
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    int ele,idx;
+    cout<<"enter element to be deleted:";
+    cin>>ele;
+    for(int i=0;i<n;i++){
+        if(a[i]==ele){
+            idx=i;
+            break;
+        }
+    }
+    for(int i=idx;i<n;i++){
+        a[i]=a[i+1];
+    }
+    n--;
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}
