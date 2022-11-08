@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[]={23,56,65,78,248,763};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int i,data;
+    cout<<"entre data to found:";
+    cin>>data;
+    int loc=-1;
+    for(i=0;i<n;i++){
+        if(arr[i]==data){
+            loc=i;
+            break;
+        }
+    }
+    if(i==n){
+        cout<<"data is not found in given array";
+    }else{
+        cout<<data<<" is found at index "<<loc<<endl;
+    }
+    return 0;
+}
