@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int call_by_value(int n);
+int main(){
+	int n=8;
+	cout<<"value of n before function call:"<<n<<endl;
+	cout<<"address of n before function call:"<<&n<<endl;
+	cout<<"ans:"<<call_by_value(n)<<endl;
+	cout<<"value of n after function call:"<<n<<endl;return 0;
+}
+int call_by_value(int n){
+	cout<<"address of n:"<<&n<<endl;
+	n*=2;
+	return n;
+}
