@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int call_by_reference_pointer(int *n)
+
+{
+    cout<<"address of n :"<<&n<<endl;
+	*n *=*n;
+	return *n;	
+}
+int main(){
+	int n=9;
+	cout<<"address of n before function call:"<<&n;;
+	cout<<"ans:"<<call_by_reference_pointer(&n)<<endl;
+	cout<<"value of n after function call:"<<n;
+	cout<<"address of n after function call:"<<&n<<endl;
+}
