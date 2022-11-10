@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+struct data{
+	int x;
+	char c;
+	float f;
+	
+void display(){
+	cout<<x<<endl;
+	cout<<c<<endl;
+	cout<<f<<endl;
+}
+}t;
+int main(){
+  t.x=8;
+  t.c='a';
+  t.f=34.5;
+  t.display();	
+	
+}
